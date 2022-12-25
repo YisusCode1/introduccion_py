@@ -23,7 +23,7 @@ DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = ['*']
 
 
-# Application definition
+# Application definition y siempre tenemos que colocar el nombre de la aplicacion
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'core',
+    'blog',
 ]
 
 MIDDLEWARE = [
