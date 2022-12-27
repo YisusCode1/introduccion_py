@@ -1,1 +1,9 @@
-create
+{% comment %} enviando informacion de un formulario {% endcomment %}
+<form method="POST">
+{% comment %} siempre que hacemos un form agregar un csrf token {% endcomment %}
+    {% csrf_token %}
+    title{{form.title}}
+    <br>
+    content{{form.content}}
+    <button type="submit">Enviar</button>
+</form>
