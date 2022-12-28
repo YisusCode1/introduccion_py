@@ -1,0 +1,7 @@
+Are you sure?
+<form method="POST">
+    {% csrf_token%}
+    {% comment %} siempre que hacemos un form agregar un csrf token {% endcomment %}
+    {{form}}
+    <button type="submit">Delete</button>
+</form>
