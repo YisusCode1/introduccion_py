@@ -8,5 +8,6 @@ urlpatterns = [
     #se ha reescrito la vista anterior
     path('', HomeView.as_view(), name="home"),
     #incluyendo nombre blog.urls y que nombre le damos blog
-    path('blog/',include('blog.urls', namespace='blog'))
+    path('blog/',include('blog.urls', namespace='blog')),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
